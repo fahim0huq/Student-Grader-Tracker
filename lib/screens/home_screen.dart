@@ -3,13 +3,20 @@ import 'package:provider/provider.dart';
 
 import '../providers/navigation_provider.dart';
 import '../providers/theme_provider.dart';
+<<<<<<< HEAD
 import 'add_subject_screen.dart';
+=======
+>>>>>>> 279934ef672bf6b77aadc8b7165e5fee559aac4e
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   static const List<Widget> _screens = [
+<<<<<<< HEAD
     AddSubjectScreen(),
+=======
+
+>>>>>>> 279934ef672bf6b77aadc8b7165e5fee559aac4e
   ];
 
   static const List<String> _titles = [
@@ -27,7 +34,10 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(_titles[navProvider.index]),
         actions: [
+<<<<<<< HEAD
 
+=======
+>>>>>>> 279934ef672bf6b77aadc8b7165e5fee559aac4e
           IconButton(
             tooltip: 'Toggle theme',
             icon: Icon(
