@@ -13,6 +13,7 @@ class SummaryScreen extends StatelessWidget {
     final provider = context.watch<SubjectProvider>();
     final passing = provider.passingSubjects.length;
     final hasData = provider.totalSubjects > 0;
+    final failed = provider.failedSubjects.length;
 
     return Padding(
       padding: const EdgeInsets.all(20),
@@ -35,6 +36,11 @@ class SummaryScreen extends StatelessWidget {
             label: 'Passing subjects',
             value: '$passing',
             icon: Icons.check_circle_outline,
+          ),
+          _SummaryCard(
+            label: 'failed subjects',
+            value: '$failed',
+            icon: Icons.not_interested,
           ),
           _SummaryCard(
             label: 'Overall grade',

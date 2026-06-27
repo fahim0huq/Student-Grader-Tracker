@@ -16,4 +16,5 @@ class Subject {
   }
 
   bool get isPassing => _mark >= 50;
+  bool get isfailed => _mark < 50;
 }

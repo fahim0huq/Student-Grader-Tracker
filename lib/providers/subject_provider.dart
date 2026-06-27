@@ -10,6 +10,9 @@ class SubjectProvider extends ChangeNotifier {
   List<Subject> get passingSubjects =>
       _subjects.where((s) => s.isPassing).toList();
 
+  List<Subject> get failedSubjects =>
+      _subjects.where((s) => s.isfailed).toList();
+
   int get totalSubjects => _subjects.length;
 
   double get averageMark {
