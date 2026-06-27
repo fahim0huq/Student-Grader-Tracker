@@ -3,12 +3,13 @@ import 'package:provider/provider.dart';
 
 import '../providers/navigation_provider.dart';
 import '../providers/theme_provider.dart';
+import 'add_subject_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   static const List<Widget> _screens = [
-
+    AddSubjectScreen(),
   ];
 
   static const List<String> _titles = [
@@ -26,6 +27,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(_titles[navProvider.index]),
         actions: [
+
           IconButton(
             tooltip: 'Toggle theme',
             icon: Icon(
