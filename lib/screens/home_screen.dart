@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:student_grade_tracker/screens/subject_list_screen.dart';
+import 'package:student_grade_tracker/screens/summary_screen.dart';
 
 import '../providers/navigation_provider.dart';
 import '../providers/theme_provider.dart';
@@ -14,6 +15,7 @@ class HomeScreen extends StatelessWidget {
 
     AddSubjectScreen(),
     SubjectListScreen(),
+    SummaryScreen(),
 
 ];
 
